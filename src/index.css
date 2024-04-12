@@ -1,68 +1,178 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{font-family:Verdana, Geneva, Tahoma, sans-serif;}
+body{
+  background: linear-gradient(108deg, #E6EEFF 28.87%, rgb(230 238 255 / 90%) 103.1%);
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.phone {
+  width: 300px; 
+  height: 550px; 
+  background-color: #fff;
+  border-radius: 25px; 
+  border: 2px solid #fff;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  padding: 2px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+
+.container {
+  margin: 3px 0px;
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px ;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: linear-gradient(180deg, #e6eeff80 28.87%, #e6eeff70 103.1%);
+  color: #4c82ef;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.left {
+  display: flex;
+  align-items: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.avatar-container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.online-dot {
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: green;
+}
+
+.name {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tick-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.role {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right-online-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.right-text {
+  font-size: 12px;
+}
+.message-container {
+  max-width: 70%;
+  margin: 15px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  clear: both;
+  overflow-wrap: break-word;
+  position: relative;
+}
+
+.sender { 
+  background-color:#e6eeffcc;
+  right:8%
+}
+
+.receiver {
+  left:8%;
+  background-color: #DCF8C6;
+ 
+}
+
+.message-text {
+  font-size: 12px;
+  margin: 0;
+} 
+.message-time {
+  font-size: 10px;
+  color: #999;
+  position: absolute;
+  bottom: -20px;
+  
+}
+.message-time-sender {
+  left:10px
+}
+.message-time-receiver  {
+  right:10px
+}
+.tag-arrow-container{
+  display:flex;
+  position: relative;
+  max-width: 100%;
+}
+.handbag-img{
+  width:100px;
+  height: 50px;
+
+}
+.popular-tags-text{
+  font-size: 12px;
+  color: grey;
+  position: relative;
+  right: 20%;
+}
+  .tag-container {
+    max-width: 100%; /* Adjust width as needed */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent tags from wrapping */
+    position: relative;
+    top:5%;
   }
-  a:hover {
-    color: #747bff;
+  .tag-container::-webkit-scrollbar {
+    display: none;
   }
-  button {
-    background-color: #f9f9f9;
+  /* Style for individual tags */
+  .tag {
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #F6F8FE;
+    color: #4c82ef;
+    border:1.5px solid #4c82ef;
+    border-radius: 5px;
+    cursor: pointer;
   }
+.left-arrow,.right-arrow{
+  color: #4c82ef;
+  font-size:35px
+}
+.product-container{
+  display: flex;
+}
+.product-name{
+  font-size: 12px;
+  font-weight: bold;
 }
