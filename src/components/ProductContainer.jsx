@@ -20,7 +20,8 @@ const ProductContainer = () => {
         </div>
       </div>
       <p className="message-text product-msg">Or set filter and help us choose the best bag for you.</p>
-    </div>
+      <span className="message-time message-time-sender">4:49 PM</span>
+ </div>
   );
 };
 

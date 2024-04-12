@@ -1,9 +1,9 @@
 
-const MessageContainer = ({ type, children, time }) => {
+const MessageContainer = ({ type, text, time }) => {
   return (
     <div className={`message-container ${type}`}>
-      {children}
-      <span className="message-time">{time}</span>
+       <p className="message-text">{text}</p>
+      <span className={type=="sender"?"message-time message-time-sender":"message-time message-time-receiver"}>{time}</span>
     </div>
   );
 };

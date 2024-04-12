@@ -211,6 +211,7 @@ body{
   border-bottom-right-radius: 15px;
   display: flex;
   align-items: center;
+  margin-top:15px;
   max-width: 90%;
 }
 .message-input {
