@@ -2,8 +2,9 @@ import Header from "./components/Header"
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import HANDBAG from "/public/handbag.jpg";
-
+import { CgAttachment } from "react-icons/cg";
 import TICK from "/public/tick.png";
+import { FaSlidersH } from "react-icons/fa";
 function App() {
 
   return (
@@ -37,14 +38,52 @@ with long strap .</p> <span className="message-time message-time-receiver">4:46 
 <div className="message-container sender">
   <div className="product-container">
     <img alt="handbag image" className="handbag-img" src={HANDBAG} />
-    <div><span className="product-name">Bags on Timpu</span>
-        <img className="tick-icon" src={TICK} alt="Tick Icon" />
+    <div className="product-text">
+    <div ><span className="product-name">Bags on Timpu</span>
+        <img className="product-tick-icon" src={TICK} alt="Tick Icon" />
+        <div className="product-link-container"><span className="product-count">1123 Products</span>
+        
+<MdOutlineKeyboardArrowRight className="product-link-arrow"/>
         </div>
-        <div><span className="role">Chat assistant</span>
+        </div>
         </div>
   </div>
-  <p className="message-text">Or set filter and help us choose the
+  <p className="message-text product-msg ">Or set filter and help us choose the
 best bag for you.</p> <span className="message-time message-time-sender">4:48 PM</span>
+</div>
+
+<div class="filter-container">
+  <div class="filter-text">Select Filter</div>
+  <div class="filter-icon"><FaSlidersH /> Filter</div>
+</div>
+
+<div class="filter-tag-container">
+  <div class="filter-tag filter-tag-first">
+    <div class="filter-tag-name">Strap - Long</div>
+    <div class="delete-icon">X</div>
+  </div>
+  <div class="filter-tag">
+    <div class="filter-tag-name">Brand</div>
+    <div class="delete-icon">X</div>
+  </div>
+  <div class="filter-tag">
+    <div class="filter-tag-name">Colour</div>
+    <div class="delete-icon">X</div>
+  </div>
+  <div class="filter-tag">
+    <div class="filter-tag-name">Material</div>
+    <div class="delete-icon">X</div>
+  </div>
+  <div class="filter-tag">
+    <div class="filter-tag-name">Size</div>
+    <div class="delete-icon">X</div>
+  </div>
+</div>
+<div class="footer">
+  <input type="text" class="message-input" placeholder="Type your message"/>
+  <div class="attachment-icon"><CgAttachment /></div>
+  <button class="send-button">
+<MdOutlineKeyboardArrowRight className="send-btn-arrow"/></button>
 </div>
   </div>
   
